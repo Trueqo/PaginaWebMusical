@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /*outline: 4px blue solid;*/
+    /*border: solid 1px red;*/
+}
+
+
+:root{
+    --naranja:#FFA43A;
+    --amarillo:#FFBF75;
+    --azul:#759EFF;
+    --cielo:#75C7FF;
+    --gris:#525558;
+    --black:#000000;
+}
+
+
+
+.grid-container{
+    display: grid;
+    background-color: var(--cielo);
+    grid-template-columns: 1fr;
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+
+
+
+
+/*Configuracion menu*/
+
+
+
+/*Estilos del piano*/
+
+
+.board {
+    position: relative;
+    font-size: 1.3vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: max-content;
+    max-height: max-content;
+    
+
+}
+
+.white {
+    position: relative;
+    width: 7em;
+    height: 22em;
+    background: #f9eaff;
+    outline: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.white h1 {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
+    user-select: none;
+}
+
+.white:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.white.active{
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.black {
+    position: absolute;
+    width: 3.5em;
+    height: 12em;
+    background: #000;
+    border-radius: 10px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 3px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.black:active {
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+#btn1{
+    left: 5em;
+}
+
+#btn2{
+    left: 12em;
+}
+
+#btn3{
+    left: 26em;
+}
+
+#btn4{
+    left: 33em;
+}
+
+#btn5{
+    left: 40em;
+}
+
+
+
+

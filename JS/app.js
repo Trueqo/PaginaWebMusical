@@ -10,32 +10,7 @@ btnDO.addEventListener("click",()=>{
 
 //activa la nota DO por medio de tecla
 
-document.addEventListener("keypress", function(evento){
 
-    let tecla = evento.code
-    
-    if (tecla == "KeyA") {
-        DO.play();
-        if(btnDO.classList[btnDO.classList.length-1]!=='active'){
-            btnDO.classList.toggle('active')
-        }
-            
-
-    }
-})
-
-document.addEventListener("keyup", function(evento){
-
-    let tecla = evento.code
-    
-    if (tecla == "KeyA") {
-
-        btnDO.classList.toggle('active')
-        
-            
-        
-    }
-})
 
 
 //activa el nota DO por medio de un click
@@ -153,7 +128,28 @@ let tecla = evento.code
 
 
 //funcion para animar todas las teclas
-function quitarEstilos(){
-    document.getElementById("btnDO").removeAttribute("box-shadow");
-    return
-}
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyA") {
+        DO.play();
+        if(btnDO.classList[btnDO.classList.length-1]!=='active'){
+            btnDO.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyA") {
+
+        btnDO.classList.toggle('active')
+        
+    }
+})
