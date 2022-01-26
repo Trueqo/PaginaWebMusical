@@ -12,7 +12,7 @@ document.body.classList.toggle('opacity');
 const rutaActual = e.target.getAttribute('src');
 
 if(rutaActual == 'img/open-menu.png'){
-    e.target.setAttribute('src','./img/open-menu2.png');
+    e.target.setAttribute('src','./img/open-menu.png');
 }else{
     e.target.setAttribute('src','./img/open-menu.png');
 }

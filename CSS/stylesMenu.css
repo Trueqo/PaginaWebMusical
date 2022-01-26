@@ -47,7 +47,7 @@
     
 }
 
-.cont-menu ul li{
+.cont-menu ul li {
     color: red;
     display: block;
     font-size: 25px;
@@ -55,9 +55,21 @@
     cursor: pointer;
 }
 
-.cont-menu ul li:hover{
+
+
+.cont-menu ul li.liPiano:hover{
     background-color: var(--naranja);
-    color: rgb(42,42,42);
+    
+}
+
+.cont-menu ul li.liMarimba:hover{
+    background-color: var(--naranja);
+    
+}
+
+.cont-menu ul li.liDrum:hover{
+    background-color: var(--naranja);
+    
 }
 
 .fondo{
@@ -123,7 +135,56 @@
 
 }
 
+/*Estilos boton inicio*/
+li.btnInicio{
+    display: flex;
+    text-align: center;
+    
+}
 
+
+
+#btnInicio {
+    width: 140px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+#btnInicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--cielo);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+#btnInicio:hover::before {
+    width: 100%;
+}
+
+#btnInicio:hover {
+    color: var(--black);
+}
+
+#btnInicio:active:before {
+    background: #b9b9b9;
+}
+
+    
 
 @media(max-width:640px){
     .cont-menu{
@@ -147,8 +208,6 @@
     }
 
 
-
-
     
     .icono-menu{
     
@@ -163,6 +222,5 @@
 
     
 }
-
 
 
