@@ -127,7 +127,7 @@
 
 @media(max-width:640px){
     .cont-menu{
-        background-color: var(--naranja);
+        background-color: var(--amarillo);
 
     }
 
@@ -147,17 +147,7 @@
     }
 
 
-    .cont-menu{
-        background-color: var(--amarillo);
-        box-shadow: 2px 0px 5px 2px rgb(66,66,66);
-        max-width: max-content;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all .5s ease;
-        z-index: 2;
-    }
+
 
     
     .icono-menu{
