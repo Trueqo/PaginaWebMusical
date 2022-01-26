@@ -64,7 +64,7 @@
 
 .fondo{
     position: fixed;
-    background-image: url(/img/fondoInicio.jpg);
+    background-image: url(../img/fondoInicio.jpg);
     background-position: center center ;
     background-size: cover;
     opacity: 0.4;
