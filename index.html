@@ -4,58 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/stylesMenu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
+
     
-    <div class="grid-container">
-        
-        <menu class="menu">
-            <button class="btn-menu" onkeypress="teclaDo()" >
-                <p> Escuela <br>
-                    Musical
-                </p>
-                <i class="bi bi-list"></i>
-            </button>
-
-            <ul>
-                <li>
-                    <button class="btn-piano" id="btn-piano" onclick="location.href='./piano.html'">
-                        <img src="./img/piano.png" alt="" class="piano">
-                    </button>
-                    
-                </li>
-                <li>
-                    <button class="btn-marimba">
-                        <img src="./img/marimba.png" alt="" class="marimba">
-                    </button>
-                </li>
-                <li>
-                    <button class="btn-drum">
-                        <img src="./img/drum.png" alt="" class="drum">
-                    </button>
-                </li>
-            </ul>
-        </menu>
-
-        
-        <contenido class="contenido">
-
-            
-        
+    
+        <div class="grid-container">
+    
             
             
-        </contenido>
-
+            <div class="icono-menu">
+                <img src="img/open-menu.png" id="icono-menu" class="icono-menu">
+            </div>
         
-        
-    </div>
+            <div class="cont-menu active" id="menu">
+                <ul>
+                    <li class="liPiano" onclick="location.href='./piano.html'"> <img src="./img/piano.png" alt="" class="liImg"> </li>
+                    <li class="liMarimba"> <img src="./img/marimba.png" alt="" class="liImg"> </li>
+                    <li class="liDrum"> <img src="./img/drum.png" alt="" class="liImg"> </li>
+                    <li> Tutorial </li>
+                    <li> Letras </li>
+                </ul>
+            </div>
+            <div class="fondo"></div>
+            <img src="./img/doom.png" class="logo">
 
-    <script src="./app.js"></script>
+
+        </div>
+        <script src="./JS/menu.js" ></script>
+        <script src="./JS/app.js"></script>
+
 </body>
+    
 </html>

@@ -1,0 +1,128 @@
+:root{
+    --naranja:#FFA43A;
+    --amarillo:#FFBF75;
+    --azul:#759EFF;
+    --cielo:#75C7FF;
+    --gris:#525558;
+    --black:#000000;
+}
+
+
+/* Estilos para el ícono del Menú */
+.icono-menu{
+    
+    width: 20%;
+    z-index: 10;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+
+    
+}
+
+
+
+/* Estilos para el contenedor del Menú */
+.cont-menu{
+    background-color: var(--amarillo);
+    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+/* Estilos por agregar en JavaScript */
+#menu.active{
+    transform: translate(-100%);
+    
+}
+
+/* Estilos para el listado del Menú */
+.cont-menu ul{
+    padding: 100px 0px 20px 0px;
+    
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    
+    cursor: pointer;
+}
+
+.cont-menu ul li:hover{
+    background-color: rgb(228,228,228);
+    color: rgb(42,42,42);
+}
+
+.fondo{
+    position: fixed;
+    background-image: url(/img/fondoInicio.jpg);
+    background-position: center center ;
+    background-size: cover;
+    opacity: 0.4;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.logo{
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    opacity: 0.9;
+    width: 50% ;
+    height: 100vh;
+    margin-left: 30%;
+
+    z-index: 1;
+}
+
+
+
+
+
+
+/*Se organiza el tamaño de las imagenes*/
+
+.liImg{
+    width: 40%;
+    height: 20vh;
+    margin-left: 30%;
+
+}
+
+.liPiano{
+    width: 100%;
+    z-index: 1;
+    padding: 0%;
+    
+
+}
+
+
+.liMarimba{
+    width: 100%;
+    z-index: 1;
+    padding: 0%;
+    
+
+}
+
+
+.liDrum{
+    width: 100%;
+    z-index: 1;
+    padding: 0%;
+
+
+}
+
+
