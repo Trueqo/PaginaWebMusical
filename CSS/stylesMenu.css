@@ -80,8 +80,8 @@
     opacity: 0.9;
     width: 50% ;
     height: 100vh;
-    margin-left: 30%;
-
+    top: 0;
+    left: 30%;
     z-index: 1;
 }
 
@@ -124,5 +124,29 @@
 
 
 }
+
+
+
+@media(max-width:640px){
+    .cont-menu{
+        background-color: #000000;
+
+    }
+
+
+    .logo{
+        display: flex;
+        position: absolute;
+        background-size: cover;
+        opacity: ;
+        width: 50% ;
+        height: 100vh;
+        
+    
+        z-index: ;
+    }
+    
+}
+
 
 

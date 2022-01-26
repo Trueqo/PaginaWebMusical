@@ -4,6 +4,7 @@
 let DO = document.getElementById("DO");
 let btnDO = document.getElementById("btnDO");
 btnDO.addEventListener("click",()=>{
+    DO.currentTime = 0;
     DO.play(); 
 });
 
@@ -11,13 +12,39 @@ btnDO.addEventListener("click",()=>{
 //activa la nota DO por medio de tecla
 
 
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyA") {
+        DO.currentTime = 0;
+        DO.play();
+        if(btnDO.classList[btnDO.classList.length-1]!=='active'){
+            btnDO.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyA") {
+
+        btnDO.classList.toggle('active')
+        
+    }
+})
 
 
-//activa el nota DO por medio de un click
+//activa el nota RE por medio de un click
 
 let RE = document.getElementById("RE");
 let btnRE = document.getElementById("btnRE");
 btnRE.addEventListener("click",()=>{
+    RE.currentTime = 0;
     RE.play();
 });
 
@@ -28,6 +55,7 @@ document.addEventListener("keypress", function(evento){
     let tecla = evento.code
     console.log(tecla)
     if (tecla == "KeyS") {
+        RE.currentTime = 0;
         RE.play();
     }
 })
@@ -37,6 +65,7 @@ document.addEventListener("keypress", function(evento){
 let MI = document.getElementById("MI");
 let btnMI = document.getElementById("btnMI");
 btnMI.addEventListener("click",()=>{
+    MI.currentTime = 0;
     MI.play();
 });
 
@@ -48,6 +77,7 @@ document.addEventListener("keypress", function(evento){
     let tecla = evento.code
 
     if (tecla == "KeyD") {
+        MI.currentTime = 0;
         MI.play();
     }
 })
@@ -57,6 +87,7 @@ document.addEventListener("keypress", function(evento){
 let FA = document.getElementById("FA");
 let btnFA = document.getElementById("btnFA");
 btnFA.addEventListener("click",()=>{
+    FA.currentTime = 0;
     FA.play();
 });
 
@@ -129,27 +160,3 @@ let tecla = evento.code
 
 //funcion para animar todas las teclas
 
-document.addEventListener("keypress", function(evento){
-
-    let tecla = evento.code
-    
-    if (tecla == "KeyA") {
-        DO.play();
-        if(btnDO.classList[btnDO.classList.length-1]!=='active'){
-            btnDO.classList.toggle('active')
-        }
-            
-
-    }
-})
-
-document.addEventListener("keyup", function(evento){
-
-    let tecla = evento.code
-    
-    if (tecla == "KeyA") {
-
-        btnDO.classList.toggle('active')
-        
-    }
-})
