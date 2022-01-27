@@ -1,4 +1,4 @@
-
+/*-------------------------------------------------------------------- */
 //activa el nota DO por medio de un click
 
 let DO = document.getElementById("DO");
@@ -37,7 +37,7 @@ document.addEventListener("keyup", function(evento){
         
     }
 })
-
+/*-------------------------------------------------------------------- */
 
 //activa el nota RE por medio de un click
 
@@ -53,12 +53,41 @@ btnRE.addEventListener("click",()=>{
 document.addEventListener("keypress", function(evento){
 
     let tecla = evento.code
+    
+    if (tecla == "KeyS") {
+        RE.currentTime = 0;
+        RE.play();
+        if(btnRE.classList[btnRE.classList.length-1]!=='active'){
+            btnRE.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyS") {
+
+        btnRE.classList.toggle('active')
+        
+    }
+})
+
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
     console.log(tecla)
     if (tecla == "KeyS") {
         RE.currentTime = 0;
         RE.play();
     }
 })
+
+/*-------------------------------------------------------------------- */
 
 //activa el nota MI por medio de un click
 
@@ -71,6 +100,33 @@ btnMI.addEventListener("click",()=>{
 
 
 //activa la nota MI por medio de tecla
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyA") {
+        MI.currentTime = 0;
+        MI.play();
+        if(btnMI.classList[btnMI.classList.length-1]!=='active'){
+            btnMI.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyD") {
+
+        btnMI.classList.toggle('active')
+        
+    }
+})
+
 
 document.addEventListener("keypress", function(evento){
 
@@ -93,12 +149,30 @@ btnFA.addEventListener("click",()=>{
 
 //activa la nota FA por medio de tecla
 
+
 document.addEventListener("keypress", function(evento){
 
     let tecla = evento.code
     
     if (tecla == "KeyF") {
+        FA.currentTime = 0;
         FA.play();
+        if(btnFA.classList[btnFA.classList.length-1]!=='active'){
+            btnFA.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyF") {
+
+        btnFA.classList.toggle('active')
+        
     }
 })
 
@@ -119,6 +193,33 @@ document.addEventListener("keypress", function(evento){
     let tecla = evento.code
     
     if (tecla == "KeyG") {
+        SOL.currentTime = 0;
+        SOL.play();
+        if(btnSOL.classList[btnSOL.classList.length-1]!=='active'){
+            btnSOL.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyG") {
+
+        btnSOL.classList.toggle('active')
+        
+    }
+})
+
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyG") {
         SOL.play();
     }
 })
@@ -132,6 +233,34 @@ btnLA.addEventListener("click",()=>{
 });
 
 //activa la nota LA por medio de la tecla
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyH") {
+        LA.currentTime = 0;
+        LA.play();
+        if(btnLA.classList[btnLA.classList.length-1]!=='active'){
+            btnLA.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyH") {
+
+        btnLA.classList.toggle('active')
+        
+    }
+})
+
+
 document.addEventListener("keypress", function(evento){
 let tecla = evento.code
     
@@ -149,6 +278,34 @@ btnSI.addEventListener("click",()=>{
 });
 
 //activa la nota SI por medio de la tecla
+
+document.addEventListener("keypress", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyJ") {
+        SI.currentTime = 0;
+        SI.play();
+        if(btnSI.classList[btnSI.classList.length-1]!=='active'){
+            btnSI.classList.toggle('active')
+        }
+            
+
+    }
+})
+
+document.addEventListener("keyup", function(evento){
+
+    let tecla = evento.code
+    
+    if (tecla == "KeyJ") {
+
+        btnSI.classList.toggle('active')
+        
+    }
+})
+
+
 document.addEventListener("keypress", function(evento){
 let tecla = evento.code
     
