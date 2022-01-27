@@ -14,7 +14,7 @@
     width: 20%;
     z-index: 10;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 20px;
     font-size: 1em;
@@ -28,7 +28,7 @@
     box-shadow: 2px 0px 5px 2px rgb(66,66,66);
     width: 400px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transition: all .5s ease;
@@ -81,6 +81,7 @@
     width: 100%;
     height: 100vh;
     z-index: 0;
+
 }
 
 .logo{
@@ -140,6 +141,7 @@ li.btnInicio{
     display: flex;
     text-align: center;
     
+    
 }
 
 
@@ -158,6 +160,7 @@ li.btnInicio{
     position: relative;
     transition: all 0.5s;
     z-index: 1;
+    font-family: 'Mochiy Pop P One', sans-serif;
 }
 
 #btnInicio::before {
@@ -187,6 +190,40 @@ li.btnInicio{
     
 
 @media(max-width:640px){
+
+
+    .PIANO{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .tocarPiano{
+        background-color: var(--cielo);
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+        font-size: 1.3vw;
+    }
+    
+    div.tocarPianoTitulo{
+        
+        position: relative;
+        z-index: 1;
+        color: red;
+        font-family: 'Mochiy Pop P One', sans-serif;
+    }
+    
+    iframe{
+        position: relative;
+        width: 50em;
+        height: 45em;
+        z-index: 1;
+    }
+    
     .cont-menu{
         background-color: var(--amarillo);
 
@@ -214,7 +251,7 @@ li.btnInicio{
         
         z-index: 10;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
         top: 10px;
         left: 20px;
         width: fit-content;
